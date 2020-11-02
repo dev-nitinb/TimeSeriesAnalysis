@@ -1,0 +1,93 @@
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:elevation="15dp"
+        android:background="@drawable/header_cell_bg">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/header_cell_bg"
+                android:padding="5dp"
+                android:gravity="center"
+                android:text="Date"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvOpen"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/content_cell_bg"
+                android:padding="5dp"
+                android:text="Open"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@+id/tvHigh"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvDate" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvHigh"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/content_cell_bg"
+                android:padding="5dp"
+                android:text="High"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvOpen"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/tvOpen"
+                app:layout_constraintTop_toTopOf="@+id/tvOpen" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvLow"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/content_cell_bg"
+                android:padding="5dp"
+                android:text="Low"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@+id/tvClose"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvOpen" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvClose"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/content_cell_bg"
+                android:padding="5dp"
+                android:text="Close"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/tvLow"
+                app:layout_constraintTop_toBottomOf="@+id/tvOpen" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.appcompat.widget.LinearLayoutCompat>
+
